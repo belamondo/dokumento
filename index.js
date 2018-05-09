@@ -27,6 +27,11 @@ app.use(function (req, res, next) {
     next();
 })
 
+//Welcome to Dokumento
+app.get("/", (req,res) => {
+	res.send("Welcome to Dokumento");
+})
+
 app.post("/crud", (req, res) => {
     let resObject = [];
 
